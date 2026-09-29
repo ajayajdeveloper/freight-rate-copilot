@@ -74,7 +74,7 @@ User question
 
 ## Build phases
 
-- [ ] **Phase 0 — Mock data.** Realistic freight rate sheets, carrier policies, surcharge rules, a carrier list with validity dates. Enough internal structure (dates, numbers, carrier names) for the validation gate to actually have something to check.
+- [x] **Phase 0 — Mock data.** Done 2026-09-29. `data/carriers.json` (7 carriers: 5 active, 1 suspended [YRCW], 1 delisted [ABCX]), `data/rates.json` (7 rates: 4 currently valid, 2 deliberately date-expired [R-1003, R-1005], 1 carrier-invalid-but-date-valid [R-1007, tests carrier-status check separately from date-expiry check]), `data/policies/*.md` (4 prose documents — fuel surcharge formula, accessorial fee table, claims process/timelines, service level premiums) as the actual RAG corpus. Deliberately split structured data (for the Phase 4 validation gate) from prose policy docs (for RAG retrieval), matching the real comparable project's pattern from the portfolio research.
 - [ ] **Phase 1 — RAG retrieval.** Chunk the mock corpus, embed, store in pgvector, hybrid search working and verified against known-answer queries.
 - [ ] **Phase 2 — Rate-lookup MCP tool.** Node.js MCP server exposing a structured rate/carrier lookup, connected to a real client.
 - [ ] **Phase 3 — Proposer agent.** LangGraph agent combining RAG retrieval + the MCP tool, producing a draft answer.

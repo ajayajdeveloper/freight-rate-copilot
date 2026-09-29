@@ -1,0 +1,9 @@
+[
+  { "carrier_code": "FXFE", "carrier_name": "FedEx Freight", "status": "active" },
+  { "carrier_code": "XPOL", "carrier_name": "XPO Logistics", "status": "active" },
+  { "carrier_code": "ODFL", "carrier_name": "Old Dominion Freight Line", "status": "active" },
+  { "carrier_code": "ESTS", "carrier_name": "Estes Express Lines", "status": "active" },
+  { "carrier_code": "SAIA", "carrier_name": "Saia LTL Freight", "status": "active" },
+  { "carrier_code": "YRCW", "carrier_name": "YRC Worldwide", "status": "suspended" },
+  { "carrier_code": "ABCX", "carrier_name": "ABC Express Freight", "status": "delisted" }
+]
